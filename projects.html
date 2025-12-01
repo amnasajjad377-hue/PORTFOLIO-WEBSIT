@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects - Amna Sajjad</title>
+
+  <!-- Internal CSS -->
+  <style>
+    :root{
+      --bg:#e1f5fe; 
+      --nav:#01579b; 
+      --card:#fff; 
+      --text:#012b4a; 
+      --accent:#0288d1; 
+    }
+    *{box-sizing:border-box} 
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text)
+    }
+    header.site-header{
+      background:var(--nav);
+      color:#fff;
+      padding:16px
+    }
+    header .container{
+      max-width:1000px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:700
+    }
+    nav a:hover{color:#b3e5fc}
+    main.container{
+      max-width:1000px;
+      margin:24px auto;
+      padding:0 16px
+    }
+    .project-box{
+      background:var(--card);
+      padding:18px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(1,23,43,0.06);
+      margin-bottom:18px
+    }
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px
+    }
+    @media (max-width:800px){
+      .projects-grid{grid-template-columns:1fr}
+    }
+    .project{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .project img{
+      width:140px;
+      height:90px;
+      object-fit:cover;
+      border-radius:8px
+    }
+    .contact{
+      background:#fff;
+      padding:16px;
+      border-radius:10px
+    }
+    .contact a{
+      display:inline-block;
+      margin-top:8px;
+      padding:8px 12px;
+      border-radius:8px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none
+    }
+    footer{
+      max-width:1000px;
+      margin:36px auto;
+      text-align:center;
+      color:var(--text);
+      padding:8px
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="font-weight:900">AMNA SAJJAD</div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="aboutus.html">About</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Projects & Experience</h1>
+    
+    <section class="project-box">
+      <h2>Web Development Skills</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <div>
+            <h3>Personal Portfolio (This site)</h3>
+            <p>Static 2-page website built with HTML & CSS. Responsive layout and internal CSS.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <h3>Library Management System (UI)</h3>
+            <p>Developed a C++ based Library Management System with features for adding, deleting, searching, and managing book records efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <strong>amnasajjad377@gmail.com</strong></p>
+      <p>Phone: <strong>+92 324 4286225</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    Portfolio | Developed by Amna Sajjad
+  </footer>
+</body>
+</html>
