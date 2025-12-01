@@ -1,222 +1,134 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8" />
-
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
   <title>About Us - Amna Sajjad</title>
 
-
-
   <style>
-
     :root{
-
       --bg: #e3f2fd;
-
       --nav: #0d47a1;
-
       --accent: #1976d2;
-
       --text: #0b2545;
-
     }
 
     *{box-sizing:border-box}
-
     body{
-
       margin:0;
-
-      font-family: "Arial", sans-serif;
-
+      font-family: Arial, sans-serif;
       background:var(--bg);
-
       color:var(--text);
-
       line-height:1.5;
-
     }
 
-
-
     header.site-header{
-
       background:var(--nav);
-
       color:#fff;
-
       padding:18px 16px;
-
     }
 
     header .container{
-
-      max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
-
-      gap:12px;
-
+      max-width:1000px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
       flex-wrap:wrap;
-
     }
 
     nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:700;
+    }
 
-      color:#fff;text-decoration:none;margin:0 10px;font-weight:700;
-
+    nav a.active{
+      color:#bbdefb;
+      border-bottom:2px solid #bbdefb;
+      padding-bottom:4px;
     }
 
     nav a:hover{color:#bbdefb}
 
-
-
     main.container{max-width:1000px;margin:28px auto;padding:0 16px;}
 
     .hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-
     .intro h1{font-size:32px;margin:0 0 6px}
-
     .intro p.lead{margin:0 0 12px;color:#234e75}
 
-
-
     section.card{
-
-      background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(3,37,76,0.06);margin-top:18px;
-
+      background:#fff;
+      padding:18px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(3,37,76,0.06);
+      margin-top:18px;
     }
 
     .grid-2{display:grid;grid-template-columns:1fr 300px;gap:18px}
-
-    @media (max-width:800px){ .grid-2{grid-template-columns:1fr} }
-
-
+    @media(max-width:800px){ .grid-2{grid-template-columns:1fr} }
 
     ul.badges{list-style:none;padding:0;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px}
-
     ul.badges li{background:var(--accent);color:white;padding:6px 10px;border-radius:999px;font-weight:700}
 
-
-
     footer{max-width:1000px;margin:36px auto;text-align:center;color:#234e75;padding:12px}
-
   </style>
-
 </head>
 
 <body>
-<nav aria-label="Main navigation">
-  <a href="aboutus.html">About</a>
-  <a href="projects.html" class="active">Projects</a>
-</nav>
-
 
   <header class="site-header">
-
     <div class="container">
-
-
+      <div style="font-weight:900">AMNA SAJJAD</div>
 
       <nav aria-label="Main navigation">
-
-        <a href="aboutus.html">About</a>
-
+        <a href="aboutus.html" class="active">About</a>
         <a href="projects.html">Projects</a>
-
       </nav>
-
     </div>
-
   </header>
-
-
 
   <main class="container">
 
     <div class="hero">
-
-      <div class="profile">
-
-      </div>
-
-
-
       <div class="intro">
-
         <h1>Hey, I'm <strong>Amna Sajjad</strong></h1>
-
         <p class="lead">BS Computer Science student. Passionate about web development, UI design and problem solving.</p>
-
         <p><a href="projects.html#contact" style="padding:10px 16px;background:var(--accent);color:white;text-decoration:none;border-radius:8px;">View Projects & Contact</a></p>
-
       </div>
-
     </div>
 
-
-
     <section class="card">
-
       <h2>Education</h2>
-
       <div class="grid-2">
-
         <div>
-
           <h3>Bachelor of Computer Science</h3>
-
           <p><em>Kinnaird College for Women University, Lahore — 2025 - Ongoing</em></p>
 
-
-
           <h3 style="margin-top:12px">Secondary</h3>
-
           <p><em>Divisional Public School and College Sahiwal — 2023 - 2025</em></p>
-
         </div>
 
-
-
-        <aside style="align-self:start;">
-
+        <aside>
           <h3>Skills</h3>
-
           <ul class="badges">
-
             <li>HTML</li><li>CSS</li><li>JavaScript (basic)</li><li>C++</li>
-
           </ul>
-
-
 
           <h3 style="margin-top:12px">Hobbies</h3>
-
           <ul>
-
             <li>Reading</li><li>Drawing</li><li>Traveling</li>
-
           </ul>
-
         </aside>
-
       </div>
-
     </section>
 
   </main>
 
-
-
   <footer>
-
     Portfolio | Developed by Amna Sajjad
-
   </footer>
 
 </body>
-
-</html> 
+</html>
