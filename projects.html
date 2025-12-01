@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects - Amna Sajjad</title>
 
-  <!-- Internal CSS -->
   <style>
     :root{
       --bg:#e1f5fe; 
@@ -14,10 +13,6 @@
       --text:#012b4a; 
       --accent:#0288d1; 
     }
-<nav aria-label="Main navigation">
-  <a href="aboutus.html">About</a>
-  <a href="projects.html" class="active">Projects</a>
-</nav>
 
     *{box-sizing:border-box} 
     body{
@@ -26,11 +21,13 @@
       background:var(--bg);
       color:var(--text)
     }
+
     header.site-header{
       background:var(--nav);
       color:#fff;
       padding:16px
     }
+
     header .container{
       max-width:1000px;
       margin:0 auto;
@@ -38,18 +35,28 @@
       align-items:center;
       justify-content:space-between
     }
+
     nav a{
       color:#fff;
       text-decoration:none;
       margin:0 10px;
       font-weight:700
     }
+
+    nav a.active{
+      color:#b3e5fc;
+      border-bottom:2px solid #b3e5fc;
+      padding-bottom:4px;
+    }
+
     nav a:hover{color:#b3e5fc}
+
     main.container{
       max-width:1000px;
       margin:24px auto;
       padding:0 16px
     }
+
     .project-box{
       background:var(--card);
       padding:18px;
@@ -57,30 +64,29 @@
       box-shadow:0 6px 18px rgba(1,23,43,0.06);
       margin-bottom:18px
     }
+
     .projects-grid{
       display:grid;
       grid-template-columns:repeat(2,1fr);
       gap:14px
     }
+
     @media (max-width:800px){
       .projects-grid{grid-template-columns:1fr}
     }
+
     .project{
       display:flex;
       gap:12px;
       align-items:flex-start;
     }
-    .project img{
-      width:140px;
-      height:90px;
-      object-fit:cover;
-      border-radius:8px
-    }
+
     .contact{
       background:#fff;
       padding:16px;
       border-radius:10px
     }
+
     .contact a{
       display:inline-block;
       margin-top:8px;
@@ -90,6 +96,7 @@
       color:#fff;
       text-decoration:none
     }
+
     footer{
       max-width:1000px;
       margin:36px auto;
@@ -99,21 +106,16 @@
     }
   </style>
 </head>
-<body>
-<nav aria-label="Main navigation">
-  <a href="aboutus.html">About</a>
-  <a href="projects.html" class="active">Projects</a>
-</nav>
 
+<body>
 
   <header class="site-header">
     <div class="container">
-      <div style="display:flex;align-items:center;gap:10px">
-        <div style="font-weight:900">AMNA SAJJAD</div>
-      </div>
+      <div style="font-weight:900">AMNA SAJJAD</div>
+
       <nav aria-label="Main navigation">
         <a href="aboutus.html">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" class="active">Projects</a>
       </nav>
     </div>
   </header>
@@ -130,6 +132,7 @@
             <p>Static 2-page website built with HTML & CSS. Responsive layout and internal CSS.</p>
           </div>
         </div>
+
         <div class="project">
           <div>
             <h3>Library Management System (UI)</h3>
@@ -149,5 +152,6 @@
   <footer>
     Portfolio | Developed by Amna Sajjad
   </footer>
+
 </body>
 </html>
